@@ -1,0 +1,23 @@
+python ./train.py \
+--baseroot "dataset/20220531datasets" \
+--load_name "models/ours0615/KPN_rainy_image_epoch250_bs1.pth" \
+--multi_gpu "false" \
+--gpu_ids "0" \
+--save_path "./models/ours" \
+--sample_path "./samples" \
+--save_mode "epoch" \
+--save_by_epoch 50 \
+--save_by_iter 10000 \
+--lr_g 0.0001 \
+--b1 0.9 \
+--b2 0.999 \
+--weight_decay 0.0 \
+--train_batch_size 1 \
+--epochs 250 \
+--lr_decrease_epoch 50 \
+--num_workers 1 \
+--crop_size 256 \
+--crop_size_h 368 \
+--crop_size_w 640 \
+--no_gpu "false" \
+--rainaug "false"
